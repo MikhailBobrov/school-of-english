@@ -82,6 +82,35 @@ function startWatch() {
 }
 
 
+//установим sass - npm i --save-dev gulp-sass
+//установим автопрефиксер npm i --save-dev gulp-autoprefixer - const autoprefixer = require('gulp-autoprefixer');
+//потом подключим его через константу - pipe
+//потом установим npm i --save-dev gulp-clean-css
+//подключим через constant - pipe
+
+const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
+const cleancss = require('gulp-clean-css')
+
+
+//создаем функцию для обработки sass файлов
+function styles() {
+    return src('app/sass/main.sass')
+        //используем нашу константу
+        .pipe(sass())
+
+        .pipe(concat('app.min.css'))
+
+        //что делаем дальше -
+        .pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true})) //grid: true - подкючаем для того,чтобы работало в  ie
+
+        .pipe(cleancss(({ level: {1: {specialComments: 0} }, format: 'beautify' }))) //level - уровень  , format: 'beautify'  - формат вывода
+
+        //выводим в папку
+        .pipe(dest('app/css/'))
+}
+
+
 //любые task которые будут использоваться нужно экспортировать - мы можем в экспорте создать
 // комбинацию нужных task
 exports.browsersync = browsersync; //теперь мы сделали экспорт данной функции в task
@@ -89,6 +118,8 @@ exports.browsersync = browsersync; //теперь мы сделали экспо
 
 exports.scripts = scripts;
 //запускаем в терминале - gulp scripts
+
+exports.styles = styles;
 
 
 //дефолтный task
