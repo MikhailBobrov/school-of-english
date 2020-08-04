@@ -7,32 +7,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/app.min.css" rel="stylesheet">
     <title>School of English language</title>
-
 </head>
+
     <body>
     <div class="index">
         <header class="page-header">
             <div class="page-header__container">
                 <nav class="main-nav">
-                    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+                    <button type="button" id="button-open" class="main-nav__toggle">
+                        <span class="visually-hidden">Открыть меню</span>
+                    </button>
+                    <button type="button" id="button-close" class="main-nav__toggle main-nav__toggle--close">
+                        <span class="visually-hidden">Закрыть меню</span>
+                    </button>
                         <div class="main-nav__wrapper container">
 
                             <div class="main-nav__list user-list">
-                                <a class="user-list__logo" href="index.html">
-                                    CleverBaby
+                                <a class="user-list__logo" href="index.html" aria-label="Иконка логотипа магазина">CleverBaby
+<!--                                    <img src="img/nerds-logo.svg" width="160" height="49" alt="Логотип Дизайн-студии Нёрдс">-->
                                 </a>
                             </div>
 
                             <ul class="main-nav__list site-list">
-                                <li class="site-list__item"><a class="site-list__link" href="metodology.html">Методика</a></li>
-                                <li class="site-list__item"><a class="site-list__link" href="teachers.html">Преподователи</a></li>
-                                <li class="site-list__item"><a class="site-list__link" href="group.html">Группы</a></li>
-                                <li class="site-list__item"><a class="site-list__link" href="comeback.html">Отзывы</a></li>
-                                <li class="site-list__item"><a class="site-list__link" href="contacts.html">Контакты</a></li>
+                                <li class="site-list__item"><a class="site-list__link" href="#">Методика</a></li>
+                                <li class="site-list__item"><a class="site-list__link" href="#">Преподователи</a></li>
+                                <li class="site-list__item"><a class="site-list__link" href="#">Группы</a></li>
+                                <li class="site-list__item"><a class="site-list__link" href="#">Отзывы</a></li>
+                                <li class="site-list__item"><a class="site-list__link" href="#">Контакты</a></li>
                             </ul>
 
                             <ul class="main-nav__list phone">
-                                <li class="phone__list"><a class="phone__list-link" href="tel:+ 7 (495) 983-47-19">+ 7 (495) 983-47-19</a></li>
+                                <li class="phone__list"><a class="phone__list-link" href="tel:+ 7 (495) 983-47-19"><span class="phone__contact-icon" aria-label="Иконка телефона"></span>+ 7 (495) 983-47-19</a></li>
                             </ul>
                         </div>
                 </nav>
@@ -40,11 +45,11 @@
         </header>
 
         <main class="main-page">
-
+            <h1 class="visually-hidden">Школа английского языка для детей Clever Baby</h1>
             <section class="main-title">
                 <div class="main-title__wrapper container">
-                    <h1 class="main-title__headline">Английский язык</h1>
-                    <h2 class="main-title__subtitle">для детей от 2 до 7 лет</h2>
+                    <h2 class="main-title__headline">Английский язык</h2>
+                    <p class="main-title__subtitle">для детей от 2 до 7 лет</p>
                     <p class="main-title__text">Гармоничное развитие детей и обучение через полное погружение в языковую среду</p>
                 </div>
 
@@ -54,53 +59,56 @@
             </section>
 
             <section class="main-study">
-                <h2 class="main-study__title">Как проходит обучение</h2>
                 <div class="main-study__wrapper container">
+                    <h2 class="main-study__title">Как проходит обучение</h2>
                     <div class="main-study__item main-study__item--text">
-                        <p class="main-study__subtitle main-study__subtitle--text">Играя — обучаем, обучая — развиваем</p>
-                        <p class="main-study__description main-study__description--text">Мы взяли все самое лучшее из традиционных    и современных методик обучения и развития детей. Обучение английскому языку происходит легко и интересно, ведь малыши не зубрят материал по учебникам, а познают его через игру, сказки, книги и музыку. </p>
-                        <p class="main-study__description main-study__description--text2">Наша методика также включает в себя обучение по программе Cambridge. Благодаря этому, наши ученики без труда сдают международные и государственные экзамены. </p>
+                        <h3 class="main-study__subtitle main-study__subtitle--text">Играя — обучаем, обучая — развиваем</h3>
+                        <div class="main-study__wrap">
+                            <p class="main-study__description main-study__description--text">Мы взяли все самое лучшее из традиционных    и современных методик обучения и развития детей. Обучение английскому языку происходит легко и интересно, ведь малыши не зубрят материал по учебникам, а познают его через игру, сказки, книги и музыку. </p>
+                            <p class="main-study__description main-study__description--text2">Наша методика также включает в себя обучение по программе Cambridge. Благодаря этому, наши ученики без труда сдают международные и государственные экзамены. </p>
+                        </div>
                     </div>
                     <div class="main-study__item main-study__item--video">
-                        <p class="main-study__subtitle main-study__subtitle--video">Посмотрите, как проходят наши занятия</p>
+                        <h3 class="main-study__subtitle main-study__subtitle--video">Посмотрите, как проходят наши занятия</h3>
                         <p class="main-study__description main-study__description--vid"><img src="https://via.placeholder.com/150x150" alt=""></p>
                     </div>
                 </div>
             </section>
 
-            <section class="advantages container">
-                <h2 class="visually-hidden">Преимущества</h2>
-                <ul class="advantages__list">
-                    <li class="advantages__item advantages__item--10vids">
-                        Развитие 10 видов интеллекта
-                        <p class="advantages__description">Учимся общаться, развивать эмоциональный, творческий интеллект и многое другое</p>
+            <section class="types container">
+                <h2 class="visually-hidden">Виды обучения</h2>
+                <ul class="types__list">
+                    <li class="types__item types__item--first">
+                        <h3 class="types__subtitle">Развитие 10 видов интеллекта</h3>
+                        <p class="types__text">Учимся общаться, развивать эмоциональный, творческий интеллект и многое другое</p>
                     </li>
-                    <li class="advantages__item advantages__item--language">
-                        Языковое погружение
-                        <p class="advantages__description">Занятия проходят полностью на английском языке, независимо от типа задания</p>
+                    <li class="types__item types__item--second">
+                        <h3 class="types__subtitle">Языковое погружение</h3>
+                        <p class="types__text">Занятия проходят полностью на английском языке, независимо от типа задания</p>
                     </li>
-                    <li class="advantages__item advantages__item--teachers">
-                        Педагоги — носители языка
-                        <p class="advantages__description">Занятия ведут преподаватели из США, Великобритании
-                            и Канады, для которых английский язык является родным</p>
+                    <li class="types__item types__item--third">
+                        <h3 class="types__subtitle">Педагоги — носители языка</h3>
+                        <p class="types__text">Занятия ведут преподаватели <br>из США, Великобритании <br class="types__br-third-tabel">и Канады, для которых английский язык является родным</p>
                     </li>
-                    <li class="advantages__item advantages__item--groups">
-                        Небольшие группы
-                        <p class="advantages__description">Дети занимаются в группах до 5 человек, что позволяет применять индивидуальный подход к каждому</p>
+                    <li class="types__item types__item--fourth">
+                        <h3 class="types__subtitle">Небольшие группы</h3>
+                        <p class="types__text">Дети занимаются в группах до 5 человек, что позволяет применять индивидуальный подход к каждому</p>
                     </li>
                 </ul>
             </section>
 
             <section class="groups container">
                 <div class="groups__wrapper">
-                    <h2 class="groups__title">Наши группы</h2>
-                    <p class="groups__paragraph">В группах занимается до 5 человек. Все дети в группе примерно одного возраста и уровня знаний.</p>
+                    <header class="groups__wrapper__header-wrapper">
+                        <h2 class="groups__title">Наши группы</h2>
+                        <p class="groups__paragraph">В группах занимается до 5 человек. Все дети в группе примерно одного возраста и уровня знаний.</p>
+                    </header>
                     <ul class="groups__list">
                         <li class="groups__item groups__item--blue">
                             <h3 class="groups__header">Бэбики-1</h3>
                             <p class="groups__description groups__description--week">1 раз в неделю</p>
                             <p class="groups__description groups__description--time">1,5 часа занятие</p>
-                            <p class="groups__description groups__description--price"><span class="groups__block">2500</span>в месяц</p>
+                            <p class="groups__description groups__description--price">2500<span class="groups__block">в месяц</span></p>
                             <div class="groups__but groups__but--blue">
                                 <a class="button groups__button" href="https://echo.htmlacademy.ru">Записаться</a>
                             </div>
@@ -109,7 +117,7 @@
                             <h3 class="groups__header">Бэбики-2</h3>
                             <p class="groups__description groups__description--week">2 раз в неделю</p>
                             <p class="groups__description groups__description--time">1,5 часа занятие</p>
-                            <p class="groups__description groups__description--price"><span class="groups__block">4000</span>в месяц</p>
+                            <p class="groups__description groups__description--price">4000<span class="groups__block">в месяц</span></p>
                             <div class="groups__but groups__but--yellow">
                                 <a class="button groups__button" href="https://echo.htmlacademy.ru">Записаться</a>
                             </div>
@@ -118,7 +126,7 @@
                             <h3 class="groups__header">Бэбики-3</h3>
                             <p class="groups__description groups__description--week">3 раз в неделю</p>
                             <p class="groups__description groups__description--time">1 час занятие</p>
-                            <p class="groups__description groups__description--price"><span class="groups__block">4000</span>в месяц</p>
+                            <p class="groups__description groups__description--price">4000<span class="groups__block">в месяц</span></p>
                             <div class="groups__but groups__but--red">
                                 <a class="button groups__button" href="https://echo.htmlacademy.ru">Записаться</a>
                             </div>
@@ -132,6 +140,7 @@
                     <h2 class="teachers__title">Наши
                         преподаватели</h2>
                     <p class="teachers__paragraph">Все наши преподаватели — носители английского языка и имеют необходимое образование и опыт работы с детьми</p>
+                    <div class="teachers__slider">
                     <ul class="teachers__list">
                         <li class="teachers__item">
                             <figure>
@@ -158,14 +167,16 @@
                             </figure>
                         </li>
                     </ul>
-                    <div class="teachers__arrow teachers__arrow--left"></div>
-                    <div class="teachers__arrow teachers__arrow--right"></div>
+                    </div>
+
+                    <a class="teachers__arrow teachers__arrow--prev"></a>
+                    <a class="teachers__arrow teachers__arrow--next"></a>
                 </div>
             </section>
 
             <section class="write">
                 <div class="write__body container">
-                    <p class="write__call">Запишитесь на бесплатное пробное занятие</p>
+                    <h2 class="write__call">Запишитесь<br>на бесплатное пробное занятие</h2>
                     <p class="write__subcall">Приходите к нам в гости и мы познакомим вас с педагогами, расскажем о школе и ответим на все ваши вопросы</p>
                     <div class="write__but write__but--yellow">
                         <a class="button write__button" href="https://echo.htmlacademy.ru">Записаться</a>
@@ -173,38 +184,55 @@
                 </div>
             </section>
 
-            <footer class="map">
-                <div class="map__block container"><!--relative-->
-                    <p class="map__header">Мы ждем вас</p>
-                    <div class="map__contacts"><!--absolute-->
-                        <p class="map__slogan">Приходите к нам:</p>
-                        <p class="map__adress">Санкт-Петербург<br> ул. Большая Конюшенная, д. 19</p>
-                        <p class="map__time">Режим работы:<span class="map__hour">Пн-Сб, с 9-00 до 20-00</span> </p>
-                        <p class="map__call">Позвоните нам:<a class="map__call-link" href="tel:+ 7 (495) 983-47-19">+ 7 (495) 983-47-19</a></p>
-                        <p class="map__email">Напишите нам:<a class="map__email-link" href="mailto:info@cleverbaby.ru ">info@cleverbaby.ru</a></p>
-                        <ul class="map__social social">
-                            <li class="social__item">
-                                <a class="social__link social__link--facebook" href="#">
-                                    <span class="visually-hidden">Мы в Фейсбуке</span></a>
-                            </li>
-                            <li class="social__item">
-                                <a class="social__link social__link--vkontakte" href="#">
-                                    <span class="visually-hidden">Мы в Вконтакте</span></a>
-                            </li>
-                            <li class="social__item">
-                                <a class="social__link social__link--facebook" href="#">
-                                    <span class="visually-hidden">Мы в Инстаграме</span></a>
-                            </li>
+            <section class="contacts">
+                <div class="contacts__text-wrapper">
+                    <h2 class="contacts__header">Мы ждем вас</h2>
+                    <div class="contacts__contacts-wrapper">
+                        <div class="contacts__item">
+                            <p class="contacts__subtitle">Приходите к нам:</p>
+                            <p class="contacts__text">Санкт-Петербург,<br> ул. Большая Конюшенная, 19</p>
+                        </div>
+                        <div class="contacts__item">
+                            <p class="contacts__subtitle">Режим работы:</p>
+                            <p class="contacts__text">Пн-Сб, с 9-00 до 20-00</p>
+                        </div>
+                        <div class="contacts__item">
+                            <p class="contacts__subtitle">Позвоните нам:</p>
+                            <p class="contacts__text"><a href="tel:+74959834719">+ 7 (495) 983-47-19</a></p>
+                        </div>
+                        <div class="contacts__item contacts__item--mail">
+                            <p class="contacts__subtitle">Напишите нам:</p>
+                            <p class="contacts__text"><a href="mailto:info@cleverbaby.ru">info@cleverbaby.ru</a></p>
+                        </div>
+                    </div>
+                    <div class="contacts__item contacts__item--social">
+                        <p class="contacts__subtitle">Мы в соцсетях:</p>
+                        <ul class="contacts__social">
+                            <li class="contacts__social-item"><a href="#" aria-label="Мы в Facebook"></a></li>
+                            <li class="contacts__social-item"><a href="#" aria-label="Мы в VKontakte"></a></li>
+                            <li class="contacts__social-item"><a href="#" aria-label="Мы в Instagram"></a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="map__container">
-                    <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4efd18f1bd3fa223b8b3a02d6d25214dd31d2c7291aa83575f6a96f64e257225&amp;source=constructor"></iframe>
+
+                <div class="contacts__map-wrapper" aria-label="Карта с адресом">
+                    <section class="map">
+                        <h2 class="visually-hidden">Карта с нашим местоположением</h2>
+                        <div class="container">
+                            <div id="map" class="map__wrapper">
+                                Карта с нашим местонахождением
+                            </div>
+                        </div>
+                    </section>
                 </div>
-                <div class="map__footer">
-                    <p class="map__2020">CleverBaby 2020 <span class="map__defense">Все права защищены</span> </p>
-                    <p class="map__confidential">Политика конфиденциальности</p>
-                </div>
+            </section>
+
+            <footer>
+                <section class="footer">
+                    <h2 class="visually-hidden">Права и политика конфиденциальности</h2>
+                    <p><a href="#">CleverBaby 2020 Все права защищены</a></p>
+                    <p><a href="#">Политика конфиденциальности</a></p>
+                </section>
             </footer>
 
         </main>
