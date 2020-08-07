@@ -141,6 +141,135 @@ body {
   margin: 0;
   padding: 0;
   font-weight: 400;
-  font-family: Oswald,Arial,sans-serif;
-  color: #000
+  font-size: 18px;
+  font-family: Montserrat,Arial,sans-serif;
+  color: #122659;
+  background-color: #fefcfa
+}
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer
+}
+*,
+::after,
+::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit
+}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+img {
+  -o-object-fit: contain;
+  object-fit: contain;
+  max-width: 100%;
+  height: auto
+}
+.visually-hidden:not(:focus):not(:active),
+input[type=checkbox].visually-hidden,
+input[type=radio].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden
+}
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/rubik-v9-latin_cyrillic-regular.eot);
+  src: local("Rubik"),local("Rubik-Regular"),url(../fonts/rubik-v9-latin_cyrillic-regular.eot?#iefix) format("embedded-opentype"),url(../fonts/rubik-v9-latin_cyrillic-regular.woff2) format("woff2"),url(../fonts/rubik-v9-latin_cyrillic-regular.woff) format("woff"),url(../fonts/rubik-v9-latin_cyrillic-regular.ttf) format("truetype"),url(../fonts/rubik-v9-latin_cyrillic-regular.svg#Rubik) format("svg")
+}
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/rubik-v9-latin_cyrillic-500.eot);
+  src: local("Rubik Medium"),local("Rubik-Medium"),url(../fonts/rubik-v9-latin_cyrillic-500.eot?#iefix) format("embedded-opentype"),url(../fonts/rubik-v9-latin_cyrillic-500.woff2) format("woff2"),url(../fonts/rubik-v9-latin_cyrillic-500.woff) format("woff"),url(../fonts/rubik-v9-latin_cyrillic-500.ttf) format("truetype"),url(../fonts/rubik-v9-latin_cyrillic-500.svg#Rubik) format("svg")
+}
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/montserrat-v14-latin_cyrillic-regular.eot);
+  src: local("Montserrat Regular"),local("Montserrat-Regular"),url(../fonts/montserrat-v14-latin_cyrillic-regular.eot?#iefix) format("embedded-opentype"),url(../fonts/montserrat-v14-latin_cyrillic-regular.woff2) format("woff2"),url(../fonts/montserrat-v14-latin_cyrillic-regular.woff) format("woff"),url(../fonts/montserrat-v14-latin_cyrillic-regular.ttf) format("truetype"),url(../fonts/montserrat-v14-latin_cyrillic-regular.svg#Montserrat) format("svg")
+}
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/montserrat-v14-latin_cyrillic-500.eot);
+  src: local("Montserrat Medium"),local("Montserrat-Medium"),url(../fonts/montserrat-v14-latin_cyrillic-500.eot?#iefix) format("embedded-opentype"),url(../fonts/montserrat-v14-latin_cyrillic-500.woff2) format("woff2"),url(../fonts/montserrat-v14-latin_cyrillic-500.woff) format("woff"),url(../fonts/montserrat-v14-latin_cyrillic-500.ttf) format("truetype"),url(../fonts/montserrat-v14-latin_cyrillic-500.svg#Montserrat) format("svg")
+}
+* {
+  margin: 0;
+  padding: 0
+}
+.nav-icon3 {
+  width: 24px;
+  height: 12px;
+  position: relative;
+  margin: 50px auto;
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+  -webkit-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer
+}
+.nav-icon3 span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: #d3531a;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+  -webkit-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out
+}
+.nav-icon3 span:nth-child(1) {
+  top: 0
+}
+#nav-icon3 span:nth-child(3),
+.nav-icon3 span:nth-child(2) {
+  top: 12px
+}
+.nav-icon3 span:nth-child(4) {
+  top: 24px
+}
+.nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0;
+  left: 50%
+}
+.nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg)
+}
+.nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg)
+}
+.nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0;
+  left: 50%
 }
