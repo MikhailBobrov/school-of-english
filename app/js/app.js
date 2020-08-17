@@ -1,3 +1,4 @@
-$(document).ready(function () {
-    //$('body').hide()
+document.querySelector('.nav-icon3').addEventListener('click', function () {
+
+    this.classList.toggle('open')
 })

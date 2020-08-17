@@ -10,30 +10,34 @@
 </head>
 
     <body>
+
     <div class="index">
         <header class="page-header">
             <div class="page-header__container">
                 <nav class="main-nav">
-                    <button type="button" id="button-open" class="main-nav__toggle">
-                        <span class="visually-hidden">Открыть меню</span>
-                    </button>
-                    <button type="button" id="button-close" class="main-nav__toggle main-nav__toggle--close">
-                        <span class="visually-hidden">Закрыть меню</span>
-                    </button>
-                    <div class="nav-icon3">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                        <div class="main-nav__wrapper container">
+<!--                    <button type="button" id="button-open" class="main-nav__toggle">-->
+<!--                        <span class="visually-hidden">Открыть меню</span>-->
+<!--                    </button>-->
+<!--                    <button type="button" id="button-close" class="main-nav__toggle main-nav__toggle&#45;&#45;close">-->
+<!--                        <span class="visually-hidden">Закрыть меню</span>-->
+<!--                    </button>-->
 
-                            <div class="main-nav__list user-list">
-                                <a class="user-list__logo" href="index.html" aria-label="Иконка логотипа магазина">
-                                    <svg width="132" height="21"><use xlink:href="img/src/sprite.svg#cleverBaby"></use></svg>
-                                </a>
-                            </div>
+                    <div class="main-nav__wrapper container">
+                        <div class="nav-icon3">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="main-nav__list user-list">
+                            <a class="user-list__logo" href="index.html" aria-label="Иконка логотипа магазина">
+                                <svg class="user-list__svg" width="132" height="21">
+                                    <use xlink:href="img/src/sprite.svg#cleverBaby"></use>
+                                </svg>
+                            </a>
+                        </div>
 
+                        <div class="main-nav__list-wrapper">
                             <ul class="main-nav__list site-list">
                                 <li class="site-list__item"><a class="site-list__link" href="#">Методика</a></li>
                                 <li class="site-list__item"><a class="site-list__link" href="#">Преподователи</a></li>
@@ -42,10 +46,20 @@
                                 <li class="site-list__item"><a class="site-list__link" href="#">Контакты</a></li>
                             </ul>
 
+
                             <ul class="main-nav__list phone">
-                                <li class="phone__list"><a class="phone__list-link" href="tel:+ 7 (495) 983-47-19"><span class="phone__contact-icon" aria-label="Иконка телефона"></span>+ 7 (495) 983-47-19</a></li>
+                                <li class="phone__list">
+                                    <a class="phone__list-link" href="tel:+ 7 (495) 983-47-19">
+                                    <span class="phone__contact-icon" aria-label="Иконка телефона">
+                                        <svg width="15" height="15">
+                                            <use xlink:href="img/src/sprite.svg/#icon-phone"></use>
+                                        </svg>
+                                    </span>
+                                        + 7 (495) 983-47-19</a>
+                                </li>
                             </ul>
                         </div>
+                    </div>
                 </nav>
             </div>
         </header>
@@ -76,7 +90,9 @@
                     </div>
                     <div class="main-study__item main-study__item--video">
                         <h3 class="main-study__subtitle main-study__subtitle--video">Посмотрите, как проходят наши занятия</h3>
-                        <p class="main-study__description main-study__description--vid"><img src="https://via.placeholder.com/150x150" alt=""></p>
+                        <p class="main-study__description main-study__description--vid"><img src="img/src/video-desktop@1x.png" alt="На картинке играющий малыш"></p>
+                        <video class="main-study__video-player" id="video" src="img/src/sample.mp4" poster="img/src/video-desktop.png" preload="metadata" controls=""></video>
+                        <button type="button" id="video-button" class="main-study__video-button" aria-label="Запустить видео"></button>
                     </div>
                 </div>
             </section>
@@ -141,44 +157,118 @@
                 </div>
             </section>
 
-            <section class="teachers container">
-                <div class="teachers__wrapper">
-                    <h2 class="teachers__title">Наши
-                        преподаватели</h2>
-                    <p class="teachers__paragraph">Все наши преподаватели — носители английского языка и имеют необходимое образование и опыт работы с детьми</p>
-                    <div class="teachers__slider">
-                    <ul class="teachers__list">
-                        <li class="teachers__item">
-                            <figure>
-                                <p class="teachers__item1"><img src="https://via.placeholder.com/150x150" alt=""></p>
-                                <figcaption>Kate Smith</figcaption><span class="teachers__block">США</span>
-                            </figure>
+            <section class="teachers slider">
+                <header class="teachers__header-wrapper">
+                    <h2 class="teachers__header">Наши преподаватели</h2>
+                    <p class="teachers__subtitle">Все наши преподаватели — носители английского языка<br> и имеют необходимое образование и опыт работы с детьми</p>
+                </header>
+                <div class="slider__wrapper">
+                    <ul class="teachers__list slider__list">
+                        <li class="slider__item">
+                            <div class="teachers__item">
+                                <img src="img/src/teacher-1@1x.jpg" alt="На картинке Kate Smith">
+                                <p class="teachers__name">Kate Smith</p>
+                                <p class="teachers__country">США</p>
+                            </div>
                         </li>
-                        <li class="teachers__item">
-                            <figure>
-                                <p class="teachers__item1"><img src="https://via.placeholder.com/150x150" alt=""></p>
-                                <figcaption>Samuel King</figcaption><span class="teachers__block">США</span>
-                            </figure>
+                        <li class="slider__item">
+                            <div class="teachers__item">
+                                <img src="img/src/teacher-2@1x.jpg" alt="На картинке Samuel King">
+                                <p class="teachers__name">Samuel King</p>
+                                <p class="teachers__country">США</p>
+                            </div>
                         </li>
-                        <li class="teachers__item">
-                            <figure>
-                                <p class="teachers__item1"><img src="https://via.placeholder.com/150x150" alt=""></p>
-                                <figcaption>Nikole Young</figcaption><span class="teachers__block">Канада</span>
-                            </figure>
+                        <li class="slider__item">
+                            <div class="teachers__item">
+                                <img src="img/src/teacher-3@1x.jpg" alt="На картинке Nikole Young">
+                                <p class="teachers__name">Nikole Young</p>
+                                <p class="teachers__country">Канада</p>
+                            </div>
                         </li>
-                        <li class="teachers__item">
-                            <figure>
-                                <p class="teachers__item1"><img src="https://via.placeholder.com/150x150" alt=""></p>
-                                <figcaption>Karoline Bush</figcaption><span class="teachers__block">Канада</span>
-                            </figure>
+                        <li class="slider__item">
+                            <div class="teachers__item">
+                                <img src="img/src/teacher-4@1x.jpg" alt="На картинке Karoline Bush">
+                                <p class="teachers__name">Karoline Bush</p>
+                                <p class="teachers__country">Канада</p>
+                            </div>
                         </li>
-                    </ul>
-                    </div>
 
-                    <a class="teachers__arrow teachers__arrow--prev"></a>
-                    <a class="teachers__arrow teachers__arrow--next"></a>
+                        <!-- Повторы для демонстрации работы слайдера -->
+                        <li class="slider__item slider__item--hide">
+                            <div class="teachers__item">
+                                <img src="img/src/teacher-1@1x.jpg" alt="На картинке Kate Smith">
+                                <p class="teachers__name">Kate Smith</p>
+                                <p class="teachers__country">США</p>
+                            </div>
+                        </li>
+                        <li class="slider__item slider__item--hide">
+                            <div class="teachers__item">
+                                <img src="img/src/teacher-2@1x.jpg" alt="На картинке Samuel King">
+                                <p class="teachers__name">Samuel King</p>
+                                <p class="teachers__country">США</p>
+                            </div>
+                        </li>
+                        <li class="slider__item slider__item--hide">
+                            <div class="teachers__item">
+                                <img src="img/src/teacher-3@1x.jpg" alt="На картинке Nikole Young">
+                                <p class="teachers__name">Nikole Young</p>
+                                <p class="teachers__country">Канада</p>
+                            </div>
+                        </li>
+                        <li class="slider__item slider__item--hide">
+                            <div class="teachers__item">
+                                <img src="img/src/teacher-4@1x.jpg" alt="На картинке Karoline Bush">
+                                <p class="teachers__name">Karoline Bush</p>
+                                <p class="teachers__country">Канада</p>
+                            </div>
+                        </li>
+
+                        <li class="slider__item slider__item--hide">
+                            <div class="teachers__item">
+                                <img src="img/src/teacher-1@1x.jpg" alt="На картинке Kate Smith">
+                                <p class="teachers__name">Kate Smith</p>
+                                <p class="teachers__country">США</p>
+                            </div>
+                        </li>
+                        <li class="slider__item slider__item--hide">
+                            <div class="teachers__item">
+                                <img src="img/src/teacher-2@1x.jpg" alt="На картинке Samuel King">
+                                <p class="teachers__name">Samuel King</p>
+                                <p class="teachers__country">США</p>
+                            </div>
+                        </li>
+                        <li class="slider__item slider__item--hide">
+                            <div class="teachers__item">
+                                <img src="img/src/teacher-3@1x.jpg" alt="На картинке Nikole Young">
+                                <p class="teachers__name">Nikole Young</p>
+                                <p class="teachers__country">Канада</p>
+                            </div>
+                        </li>
+                        <li class="slider__item slider__item--hide">
+                            <div class="teachers__item">
+                                <img src="img/src/teacher-4@1x.jpg" alt="На картинке Karoline Bush">
+                                <p class="teachers__name">Karoline Bush</p>
+                                <p class="teachers__country">Канада</p>
+                            </div>
+                        </li>
+
+                    </ul>
                 </div>
+
+                <a class="teachers__prev slider__prev">
+                    <svg width="15" height="8">
+                        <use xlink:href="#icon-arrow-left"></use>
+                    </svg>
+                </a>
+                <a class="teachers__next slider__next">
+                    <svg width="15" height="8">
+                        <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                </a>
+
             </section>
+
+
 
             <section class="write">
                 <div class="write__body container">
@@ -214,9 +304,21 @@
                     <div class="contacts__item contacts__item--social">
                         <p class="contacts__subtitle">Мы в соцсетях:</p>
                         <ul class="contacts__social">
-                            <li class="contacts__social-item"><a href="#" aria-label="Мы в Facebook"></a></li>
-                            <li class="contacts__social-item"><a href="#" aria-label="Мы в VKontakte"></a></li>
-                            <li class="contacts__social-item"><a href="#" aria-label="Мы в Instagram"></a></li>
+                            <li class="contacts__social-item"><a href="#" aria-label="Мы в Facebook"></a>
+                                <svg class="contacts__social-facebook" height="12" width="16">
+                                    <use xlink:href="img/src/sprite.svg/#fb"></use>
+                                </svg>
+                            </li>
+                            <li class="contacts__social-item"><a href="#" aria-label="Мы в VKontakte"></a>
+                                <svg class="contacts__social-vk" height="8" width="14">
+                                    <use xlink:href="img/src/sprite.svg/#vk"></use>
+                                </svg>
+                            </li>
+                            <li class="contacts__social-item"><a href="#" aria-label="Мы в Instagram"></a>
+                                <svg class="contacts__social-instagram" height="12" width="12">
+                                    <use xlink:href="img/src/sprite.svg/#instagram"></use>
+                                </svg>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -226,7 +328,7 @@
                         <h2 class="visually-hidden">Карта с нашим местоположением</h2>
                         <div class="container">
                             <div id="map" class="map__wrapper">
-                                Карта с нашим местонахождением
+                                <img src="img/src/map-layer-desktop@1x.jpg" alt="Карта с нашим местонахождением" width="1366" height="611">
                             </div>
                         </div>
                     </section>

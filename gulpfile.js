@@ -28,7 +28,7 @@ function browsersync() {
     browserSync.init({
                                                             //2 прописываем параметры - путь до папки из которой сервер будет брать файлы - app
                                                             //через , (запятую) указываем необходимые нам параметры
-        server: { baseDir: 'app/'},
+        server: { baseDir: 'app/' },
         notify: false, //отключили уведомления
         online: true, //browsersync - нужна сеть, если мы хотим работать без сети без интернета используем параметр online: false
         // // и после этого обязательно экспортируем - exports.browsersync = browsersync; - 62 строка
@@ -98,13 +98,14 @@ function scripts() {
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const cleancss = require('gulp-clean-css')
-
+let preprocessor = 'sass'
 
 //создаем функцию для обработки sass файлов
 function styles() {
-    return src('app/sass/main.sass')
+    return src('app/' + preprocessor + '/main.' + preprocessor + '')
         //используем нашу константу
-        .pipe(sass())
+        .pipe(eval(preprocessor)())
+
 
         .pipe(concat('app.min.css'))
 
@@ -204,7 +205,7 @@ function buildcopy() {
 function startWatch() {
     watch(['app/**/*.js', '!app/**/*.min.js'], scripts); //так мы выбираем все js файлы в нашем проекте и одновременно ! знак идет после того как мы указали все файлы. Мы исключим все файлы из папки app/**/*.min.js
     //что происходит - чтобы не было рекурсивного обновления страницы - и рекурсивной сборки - как работает сценарий: мы сохраняем файл app.js - потом инициализируется сборка - все js файлы выгружаются app.min.js - (37.55 минута)
-    watch('app/**/' + '/**/*', styles);
+    watch('app/**/' + preprocessor + '/**/*', styles);
     watch('app/**/*.html').on('change', browserSync.reload)
     watch('app/img/src/**/*', images);
     watch('app/img/src/**/*', webP);
