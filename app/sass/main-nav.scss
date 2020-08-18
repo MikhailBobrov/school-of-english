@@ -1,3 +1,26 @@
+//Menu - сначала пришем стили ктр использую на всех
+// разрешениях,а потом специфические
+
 .main-nav {
-  display: flex;
+
 }
+
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  color: #122659
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 22px;
+  }
+}
+
+
+

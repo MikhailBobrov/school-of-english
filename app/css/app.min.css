@@ -159,6 +159,7 @@ a {
 }
 body,
 html {
+  line-height: 1.5;
   height: 100%;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -213,21 +214,27 @@ input[type=radio].visually-hidden {
   src: url(../fonts/montserrat-v14-latin_cyrillic-500.eot);
   src: local("Montserrat Medium"),local("Montserrat-Medium"),url(../fonts/montserrat-v14-latin_cyrillic-500.eot?#iefix) format("embedded-opentype"),url(../fonts/montserrat-v14-latin_cyrillic-500.woff2) format("woff2"),url(../fonts/montserrat-v14-latin_cyrillic-500.woff) format("woff"),url(../fonts/montserrat-v14-latin_cyrillic-500.ttf) format("truetype"),url(../fonts/montserrat-v14-latin_cyrillic-500.svg#Montserrat) format("svg")
 }
+.header {
+  padding-left: 15px;
+  padding-top: 33px
+}
 .nav-icon3 {
   width: 24px;
   height: 12px;
   position: relative;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 30px;
-  padding-left: 5px;
+  margin-left: 0;
   -webkit-transform: rotate(0);
   -ms-transform: rotate(0);
   transform: rotate(0);
   -webkit-transition: .5s ease-in-out;
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
-  cursor: pointer
+  cursor: pointer;
+  padding: 12px;
+  border: none;
+  background: 0 0
 }
 .nav-icon3 span {
   display: block;
@@ -277,8 +284,18 @@ input[type=radio].visually-hidden {
   width: 0;
   left: 50%
 }
-.main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  color: #122659
+}
+@media (min-width:768px) {
+  .site-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 22px
+  }
 }
