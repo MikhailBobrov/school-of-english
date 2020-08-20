@@ -214,9 +214,33 @@ input[type=radio].visually-hidden {
   src: url(../fonts/montserrat-v14-latin_cyrillic-500.eot);
   src: local("Montserrat Medium"),local("Montserrat-Medium"),url(../fonts/montserrat-v14-latin_cyrillic-500.eot?#iefix) format("embedded-opentype"),url(../fonts/montserrat-v14-latin_cyrillic-500.woff2) format("woff2"),url(../fonts/montserrat-v14-latin_cyrillic-500.woff) format("woff"),url(../fonts/montserrat-v14-latin_cyrillic-500.ttf) format("truetype"),url(../fonts/montserrat-v14-latin_cyrillic-500.svg#Montserrat) format("svg")
 }
+:root {
+  --basic-black: #000000;
+  --basic-dark: #273238;
+  --basic-semi-light: #696969;
+  --basic-neutral: #b1b3b6;
+  --basic-light: #e9eaeb;
+  --basic-white: #ffffff;
+  --special-extra-dark: #122659;
+  --special-dark: #3b84bb;
+  --special-dark-10a: rgb(59 132 187 / 0.1);
+  --special-semi-dark: #42a0da;
+  --special-neutral: #61afb4;
+  --special-semi-light: #81c36d;
+  --special-light: #afe63a;
+  --special-extra-light: #c6f523
+}
 .header {
+  display: -ms-grid;
+  display: grid;
   padding-left: 15px;
   padding-top: 33px
+}
+.header__logo {
+  margin-left: 40px
+}
+.header__out {
+  z-index: 1
 }
 .nav-icon3 {
   width: 24px;
@@ -234,7 +258,14 @@ input[type=radio].visually-hidden {
   cursor: pointer;
   padding: 12px;
   border: none;
-  background: 0 0
+  background-color: transparent;
+  -ms-grid-column-align: left;
+  justify-self: left;
+  z-index: 2
+}
+.nav-icon3:focus,
+.nav-icon3:hover {
+  opacity: .7
 }
 .nav-icon3 span {
   display: block;
@@ -284,12 +315,37 @@ input[type=radio].visually-hidden {
   width: 0;
   left: 50%
 }
+.main-nav {
+  display: -ms-grid;
+  display: grid;
+  padding-top: 23px
+}
+.main-nav__menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 15px
+}
 .site-list {
   margin: 0;
-  padding: 0;
+  padding-left: 0;
+  padding-top: 35px;
   list-style: none;
   font-size: 18px;
-  color: #122659
+  color: var(--special-extra-dark);
+  display: none;
+  row-gap: 25px
+}
+.site-list--open {
+  display: -ms-grid;
+  display: grid
+}
+.site-list__link {
+  color: var(--special-extra-dark)
+}
+.site-list__link--current {
+  font-weight: 700;
+  color: var(--special-extra-dark)
 }
 @media (min-width:768px) {
   .site-list {
@@ -298,4 +354,26 @@ input[type=radio].visually-hidden {
     list-style: none;
     font-size: 22px
   }
+}
+.phone {
+  margin-left: 0;
+  margin-top: 35px;
+  padding-left: 0;
+  padding-bottom: 40px;
+  list-style: none;
+  font-size: 18px;
+  display: none
+}
+.phone__menu {
+  position: absolute;
+  top: 328px;
+  right: 0;
+  left: 16px
+}
+.phone__open {
+  display: -ms-grid;
+  display: grid
+}
+.phone__list-link {
+  color: var(--special-extra-dark)
 }

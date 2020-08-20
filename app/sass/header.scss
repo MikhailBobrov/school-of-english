@@ -1,4 +1,15 @@
 .header {
+  display: grid;
   padding-left: 15px;
   padding-top: 33px;
 }
+
+.header__logo {
+  margin-left: 40px;
+}
+
+//Logo - чтобы мжно выделить и навести на Лого
+.header__out {
+  z-index: 1;
+}
+

@@ -1,26 +1,16 @@
 //Menu - сначала пришем стили ктр использую на всех
 // разрешениях,а потом специфические
 
+//фишка - мы все наше меню наивгации сделали абсолютным
+//menu
 .main-nav {
-
+  display: grid;
+  padding-top: 23px;
 }
 
-.site-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 18px;
-  color: #122659
+.main-nav__menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 15px;
 }
-
-@media (min-width: $tablet-width) {
-  .site-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 22px;
-  }
-}
-
-
-

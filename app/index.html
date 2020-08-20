@@ -14,7 +14,7 @@
     <div class="index">
         <header class="header container">
 
-            <div class="header__logo">
+            <div class="header__logo header__out">
                 <a class="header__logo-link" href="index.html" aria-label="Иконка логотипа магазина">
                     <svg class="header__logo-svg" width="132" height="21">
                         <use xlink:href="img/src/sprite.svg#cleverBaby"></use>
@@ -22,34 +22,32 @@
                 </a>
             </div>
 
-            <nav class="main-nav">
+            <nav class="main-nav main-nav__menu">
 
-                <div class="main-nav__wrapper container">
-                    <button class="nav-icon3" type="button" aria-expanded="false" aria-controls="site__list">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
+                <button class="nav-icon3 open" type="button" aria-expanded="false" aria-controls="site__list phone">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
 
+                <ul class="main-nav__list site-list site-list--open" id="site-list">
+                    <li class="site-list__item"><a class="site-list__link site-list__link--current" href="#">Методика</a></li>
+                    <li class="site-list__item"><a class="site-list__link" href="#">Преподователи</a></li>
+                    <li class="site-list__item"><a class="site-list__link" href="#">Группы</a></li>
+                    <li class="site-list__item"><a class="site-list__link" href="#">Отзывы</a></li>
+                    <li class="site-list__item"><a class="site-list__link" href="#">Контакты</a></li>
+                </ul>
 
-                    <ul class="main-nav__list site-list" id="site-list">
-                        <li class="site-list__item"><a class="site-list__link" href="#">Методика</a></li>
-                        <li class="site-list__item"><a class="site-list__link" href="#">Преподователи</a></li>
-                        <li class="site-list__item"><a class="site-list__link" href="#">Группы</a></li>
-                        <li class="site-list__item"><a class="site-list__link" href="#">Отзывы</a></li>
-                        <li class="site-list__item"><a class="site-list__link" href="#">Контакты</a></li>
-                    </ul>
-
-                </div>
             </nav>
 
-            <ul class="phone">
+
+            <ul class="phone phone__menu phone__open" id="phone">
                 <li class="phone__list">
                     <a class="phone__list-link" href="tel:+ 7 (495) 983-47-19">
                         <span class="phone__contact-icon" aria-label="Иконка телефона">
-                            <svg width="15" height="15">
-                                <use xlink:href="img/src/sprite.svg/#icon-phone"></use>
+                            <svg class="phone__svg" width="15" height="15">
+                                <use xlink:href="img/src/sprite.svg#icon-phone"></use>
                             </svg>
                         </span>
                         + 7 (495) 983-47-19</a>
@@ -58,286 +56,286 @@
 
         </header>
 
-        <main class="main-page">
-            <h1 class="visually-hidden">Школа английского языка для детей Clever Baby</h1>
-            <section class="main-title">
-                <div class="main-title__wrapper container">
-                    <h2 class="main-title__headline">Английский язык</h2>
-                    <p class="main-title__subtitle">для детей от 2 до 7 лет</p>
-                    <p class="main-title__text">Гармоничное развитие детей и обучение через полное погружение в языковую среду</p>
-                </div>
+<!--        <main class="main-page">-->
+<!--            <h1 class="visually-hidden">Школа английского языка для детей Clever Baby</h1>-->
+<!--            <section class="main-title">-->
+<!--                <div class="main-title__wrapper container">-->
+<!--                    <h2 class="main-title__headline">Английский язык</h2>-->
+<!--                    <p class="main-title__subtitle">для детей от 2 до 7 лет</p>-->
+<!--                    <p class="main-title__text">Гармоничное развитие детей и обучение через полное погружение в языковую среду</p>-->
+<!--                </div>-->
 
-                <div class="main-title__but">
-                    <a class="button main-title__button" href="https://echo.htmlacademy.ru">Записаться</a>
-                </div>
-            </section>
+<!--                <div class="main-title__but">-->
+<!--                    <a class="button main-title__button" href="https://echo.htmlacademy.ru">Записаться</a>-->
+<!--                </div>-->
+<!--            </section>-->
 
-            <section class="main-study">
-                <div class="main-study__wrapper container">
-                    <h2 class="main-study__title">Как проходит обучение</h2>
-                    <div class="main-study__item main-study__item--text">
-                        <h3 class="main-study__subtitle main-study__subtitle--text">Играя — обучаем, обучая — развиваем</h3>
-                        <div class="main-study__wrap">
-                            <p class="main-study__description main-study__description--text">Мы взяли все самое лучшее из традиционных    и современных методик обучения и развития детей. Обучение английскому языку происходит легко и интересно, ведь малыши не зубрят материал по учебникам, а познают его через игру, сказки, книги и музыку. </p>
-                            <p class="main-study__description main-study__description--text2">Наша методика также включает в себя обучение по программе Cambridge. Благодаря этому, наши ученики без труда сдают международные и государственные экзамены. </p>
-                        </div>
-                    </div>
-                    <div class="main-study__item main-study__item--video">
-                        <h3 class="main-study__subtitle main-study__subtitle--video">Посмотрите, как проходят наши занятия</h3>
-                        <p class="main-study__description main-study__description--vid"><img src="img/src/video-desktop@1x.png" alt="На картинке играющий малыш"></p>
-                        <video class="main-study__video-player" id="video" src="img/src/sample.mp4" poster="img/src/video-desktop.png" preload="metadata" controls=""></video>
-                        <button type="button" id="video-button" class="main-study__video-button" aria-label="Запустить видео"></button>
-                    </div>
-                </div>
-            </section>
+<!--            <section class="main-study">-->
+<!--                <div class="main-study__wrapper container">-->
+<!--                    <h2 class="main-study__title">Как проходит обучение</h2>-->
+<!--                    <div class="main-study__item main-study__item&#45;&#45;text">-->
+<!--                        <h3 class="main-study__subtitle main-study__subtitle&#45;&#45;text">Играя — обучаем, обучая — развиваем</h3>-->
+<!--                        <div class="main-study__wrap">-->
+<!--                            <p class="main-study__description main-study__description&#45;&#45;text">Мы взяли все самое лучшее из традиционных    и современных методик обучения и развития детей. Обучение английскому языку происходит легко и интересно, ведь малыши не зубрят материал по учебникам, а познают его через игру, сказки, книги и музыку. </p>-->
+<!--                            <p class="main-study__description main-study__description&#45;&#45;text2">Наша методика также включает в себя обучение по программе Cambridge. Благодаря этому, наши ученики без труда сдают международные и государственные экзамены. </p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="main-study__item main-study__item&#45;&#45;video">-->
+<!--                        <h3 class="main-study__subtitle main-study__subtitle&#45;&#45;video">Посмотрите, как проходят наши занятия</h3>-->
+<!--                        <p class="main-study__description main-study__description&#45;&#45;vid"><img src="img/src/video-desktop@1x.png" alt="На картинке играющий малыш"></p>-->
+<!--                        <video class="main-study__video-player" id="video" src="img/src/sample.mp4" poster="img/src/video-desktop.png" preload="metadata" controls=""></video>-->
+<!--                        <button type="button" id="video-button" class="main-study__video-button" aria-label="Запустить видео"></button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </section>-->
 
-            <section class="types container">
-                <h2 class="visually-hidden">Виды обучения</h2>
-                <ul class="types__list">
-                    <li class="types__item types__item--first">
-                        <h3 class="types__subtitle">Развитие 10 видов интеллекта</h3>
-                        <p class="types__text">Учимся общаться, развивать эмоциональный, творческий интеллект и многое другое</p>
-                    </li>
-                    <li class="types__item types__item--second">
-                        <h3 class="types__subtitle">Языковое погружение</h3>
-                        <p class="types__text">Занятия проходят полностью на английском языке, независимо от типа задания</p>
-                    </li>
-                    <li class="types__item types__item--third">
-                        <h3 class="types__subtitle">Педагоги — носители языка</h3>
-                        <p class="types__text">Занятия ведут преподаватели <br>из США, Великобритании <br class="types__br-third-tabel">и Канады, для которых английский язык является родным</p>
-                    </li>
-                    <li class="types__item types__item--fourth">
-                        <h3 class="types__subtitle">Небольшие группы</h3>
-                        <p class="types__text">Дети занимаются в группах до 5 человек, что позволяет применять индивидуальный подход к каждому</p>
-                    </li>
-                </ul>
-            </section>
+<!--            <section class="types container">-->
+<!--                <h2 class="visually-hidden">Виды обучения</h2>-->
+<!--                <ul class="types__list">-->
+<!--                    <li class="types__item types__item&#45;&#45;first">-->
+<!--                        <h3 class="types__subtitle">Развитие 10 видов интеллекта</h3>-->
+<!--                        <p class="types__text">Учимся общаться, развивать эмоциональный, творческий интеллект и многое другое</p>-->
+<!--                    </li>-->
+<!--                    <li class="types__item types__item&#45;&#45;second">-->
+<!--                        <h3 class="types__subtitle">Языковое погружение</h3>-->
+<!--                        <p class="types__text">Занятия проходят полностью на английском языке, независимо от типа задания</p>-->
+<!--                    </li>-->
+<!--                    <li class="types__item types__item&#45;&#45;third">-->
+<!--                        <h3 class="types__subtitle">Педагоги — носители языка</h3>-->
+<!--                        <p class="types__text">Занятия ведут преподаватели <br>из США, Великобритании <br class="types__br-third-tabel">и Канады, для которых английский язык является родным</p>-->
+<!--                    </li>-->
+<!--                    <li class="types__item types__item&#45;&#45;fourth">-->
+<!--                        <h3 class="types__subtitle">Небольшие группы</h3>-->
+<!--                        <p class="types__text">Дети занимаются в группах до 5 человек, что позволяет применять индивидуальный подход к каждому</p>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </section>-->
 
-            <section class="groups container">
-                <div class="groups__wrapper">
-                    <header class="groups__wrapper__header-wrapper">
-                        <h2 class="groups__title">Наши группы</h2>
-                        <p class="groups__paragraph">В группах занимается до 5 человек. Все дети в группе примерно одного возраста и уровня знаний.</p>
-                    </header>
-                    <ul class="groups__list">
-                        <li class="groups__item groups__item--blue">
-                            <h3 class="groups__header">Бэбики-1</h3>
-                            <p class="groups__description groups__description--week">1 раз в неделю</p>
-                            <p class="groups__description groups__description--time">1,5 часа занятие</p>
-                            <p class="groups__description groups__description--price">2500<span class="groups__block">в месяц</span></p>
-                            <div class="groups__but groups__but--blue">
-                                <a class="button groups__button" href="https://echo.htmlacademy.ru">Записаться</a>
-                            </div>
-                        </li>
-                        <li class="groups__item groups__item--yellow">
-                            <h3 class="groups__header">Бэбики-2</h3>
-                            <p class="groups__description groups__description--week">2 раз в неделю</p>
-                            <p class="groups__description groups__description--time">1,5 часа занятие</p>
-                            <p class="groups__description groups__description--price">4000<span class="groups__block">в месяц</span></p>
-                            <div class="groups__but groups__but--yellow">
-                                <a class="button groups__button" href="https://echo.htmlacademy.ru">Записаться</a>
-                            </div>
-                        </li>
-                        <li class="groups__item groups__item--red">
-                            <h3 class="groups__header">Бэбики-3</h3>
-                            <p class="groups__description groups__description--week">3 раз в неделю</p>
-                            <p class="groups__description groups__description--time">1 час занятие</p>
-                            <p class="groups__description groups__description--price">4000<span class="groups__block">в месяц</span></p>
-                            <div class="groups__but groups__but--red">
-                                <a class="button groups__button" href="https://echo.htmlacademy.ru">Записаться</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+<!--            <section class="groups container">-->
+<!--                <div class="groups__wrapper">-->
+<!--                    <header class="groups__wrapper__header-wrapper">-->
+<!--                        <h2 class="groups__title">Наши группы</h2>-->
+<!--                        <p class="groups__paragraph">В группах занимается до 5 человек. Все дети в группе примерно одного возраста и уровня знаний.</p>-->
+<!--                    </header>-->
+<!--                    <ul class="groups__list">-->
+<!--                        <li class="groups__item groups__item&#45;&#45;blue">-->
+<!--                            <h3 class="groups__header">Бэбики-1</h3>-->
+<!--                            <p class="groups__description groups__description&#45;&#45;week">1 раз в неделю</p>-->
+<!--                            <p class="groups__description groups__description&#45;&#45;time">1,5 часа занятие</p>-->
+<!--                            <p class="groups__description groups__description&#45;&#45;price">2500<span class="groups__block">в месяц</span></p>-->
+<!--                            <div class="groups__but groups__but&#45;&#45;blue">-->
+<!--                                <a class="button groups__button" href="https://echo.htmlacademy.ru">Записаться</a>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li class="groups__item groups__item&#45;&#45;yellow">-->
+<!--                            <h3 class="groups__header">Бэбики-2</h3>-->
+<!--                            <p class="groups__description groups__description&#45;&#45;week">2 раз в неделю</p>-->
+<!--                            <p class="groups__description groups__description&#45;&#45;time">1,5 часа занятие</p>-->
+<!--                            <p class="groups__description groups__description&#45;&#45;price">4000<span class="groups__block">в месяц</span></p>-->
+<!--                            <div class="groups__but groups__but&#45;&#45;yellow">-->
+<!--                                <a class="button groups__button" href="https://echo.htmlacademy.ru">Записаться</a>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li class="groups__item groups__item&#45;&#45;red">-->
+<!--                            <h3 class="groups__header">Бэбики-3</h3>-->
+<!--                            <p class="groups__description groups__description&#45;&#45;week">3 раз в неделю</p>-->
+<!--                            <p class="groups__description groups__description&#45;&#45;time">1 час занятие</p>-->
+<!--                            <p class="groups__description groups__description&#45;&#45;price">4000<span class="groups__block">в месяц</span></p>-->
+<!--                            <div class="groups__but groups__but&#45;&#45;red">-->
+<!--                                <a class="button groups__button" href="https://echo.htmlacademy.ru">Записаться</a>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </section>-->
 
-            <section class="teachers slider">
-                <header class="teachers__header-wrapper">
-                    <h2 class="teachers__header">Наши преподаватели</h2>
-                    <p class="teachers__subtitle">Все наши преподаватели — носители английского языка<br> и имеют необходимое образование и опыт работы с детьми</p>
-                </header>
-                <div class="slider__wrapper">
-                    <ul class="teachers__list slider__list">
-                        <li class="slider__item">
-                            <div class="teachers__item">
-                                <img src="img/src/teacher-1@1x.jpg" alt="На картинке Kate Smith">
-                                <p class="teachers__name">Kate Smith</p>
-                                <p class="teachers__country">США</p>
-                            </div>
-                        </li>
-                        <li class="slider__item">
-                            <div class="teachers__item">
-                                <img src="img/src/teacher-2@1x.jpg" alt="На картинке Samuel King">
-                                <p class="teachers__name">Samuel King</p>
-                                <p class="teachers__country">США</p>
-                            </div>
-                        </li>
-                        <li class="slider__item">
-                            <div class="teachers__item">
-                                <img src="img/src/teacher-3@1x.jpg" alt="На картинке Nikole Young">
-                                <p class="teachers__name">Nikole Young</p>
-                                <p class="teachers__country">Канада</p>
-                            </div>
-                        </li>
-                        <li class="slider__item">
-                            <div class="teachers__item">
-                                <img src="img/src/teacher-4@1x.jpg" alt="На картинке Karoline Bush">
-                                <p class="teachers__name">Karoline Bush</p>
-                                <p class="teachers__country">Канада</p>
-                            </div>
-                        </li>
+<!--            <section class="teachers slider">-->
+<!--                <header class="teachers__header-wrapper">-->
+<!--                    <h2 class="teachers__header">Наши преподаватели</h2>-->
+<!--                    <p class="teachers__subtitle">Все наши преподаватели — носители английского языка<br> и имеют необходимое образование и опыт работы с детьми</p>-->
+<!--                </header>-->
+<!--                <div class="slider__wrapper">-->
+<!--                    <ul class="teachers__list slider__list">-->
+<!--                        <li class="slider__item">-->
+<!--                            <div class="teachers__item">-->
+<!--                                <img src="img/src/teacher-1@1x.jpg" alt="На картинке Kate Smith">-->
+<!--                                <p class="teachers__name">Kate Smith</p>-->
+<!--                                <p class="teachers__country">США</p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li class="slider__item">-->
+<!--                            <div class="teachers__item">-->
+<!--                                <img src="img/src/teacher-2@1x.jpg" alt="На картинке Samuel King">-->
+<!--                                <p class="teachers__name">Samuel King</p>-->
+<!--                                <p class="teachers__country">США</p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li class="slider__item">-->
+<!--                            <div class="teachers__item">-->
+<!--                                <img src="img/src/teacher-3@1x.jpg" alt="На картинке Nikole Young">-->
+<!--                                <p class="teachers__name">Nikole Young</p>-->
+<!--                                <p class="teachers__country">Канада</p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li class="slider__item">-->
+<!--                            <div class="teachers__item">-->
+<!--                                <img src="img/src/teacher-4@1x.jpg" alt="На картинке Karoline Bush">-->
+<!--                                <p class="teachers__name">Karoline Bush</p>-->
+<!--                                <p class="teachers__country">Канада</p>-->
+<!--                            </div>-->
+<!--                        </li>-->
 
-                        <!-- Повторы для демонстрации работы слайдера -->
-                        <li class="slider__item slider__item--hide">
-                            <div class="teachers__item">
-                                <img src="img/src/teacher-1@1x.jpg" alt="На картинке Kate Smith">
-                                <p class="teachers__name">Kate Smith</p>
-                                <p class="teachers__country">США</p>
-                            </div>
-                        </li>
-                        <li class="slider__item slider__item--hide">
-                            <div class="teachers__item">
-                                <img src="img/src/teacher-2@1x.jpg" alt="На картинке Samuel King">
-                                <p class="teachers__name">Samuel King</p>
-                                <p class="teachers__country">США</p>
-                            </div>
-                        </li>
-                        <li class="slider__item slider__item--hide">
-                            <div class="teachers__item">
-                                <img src="img/src/teacher-3@1x.jpg" alt="На картинке Nikole Young">
-                                <p class="teachers__name">Nikole Young</p>
-                                <p class="teachers__country">Канада</p>
-                            </div>
-                        </li>
-                        <li class="slider__item slider__item--hide">
-                            <div class="teachers__item">
-                                <img src="img/src/teacher-4@1x.jpg" alt="На картинке Karoline Bush">
-                                <p class="teachers__name">Karoline Bush</p>
-                                <p class="teachers__country">Канада</p>
-                            </div>
-                        </li>
+<!--                        &lt;!&ndash; Повторы для демонстрации работы слайдера &ndash;&gt;-->
+<!--                        <li class="slider__item slider__item&#45;&#45;hide">-->
+<!--                            <div class="teachers__item">-->
+<!--                                <img src="img/src/teacher-1@1x.jpg" alt="На картинке Kate Smith">-->
+<!--                                <p class="teachers__name">Kate Smith</p>-->
+<!--                                <p class="teachers__country">США</p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li class="slider__item slider__item&#45;&#45;hide">-->
+<!--                            <div class="teachers__item">-->
+<!--                                <img src="img/src/teacher-2@1x.jpg" alt="На картинке Samuel King">-->
+<!--                                <p class="teachers__name">Samuel King</p>-->
+<!--                                <p class="teachers__country">США</p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li class="slider__item slider__item&#45;&#45;hide">-->
+<!--                            <div class="teachers__item">-->
+<!--                                <img src="img/src/teacher-3@1x.jpg" alt="На картинке Nikole Young">-->
+<!--                                <p class="teachers__name">Nikole Young</p>-->
+<!--                                <p class="teachers__country">Канада</p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li class="slider__item slider__item&#45;&#45;hide">-->
+<!--                            <div class="teachers__item">-->
+<!--                                <img src="img/src/teacher-4@1x.jpg" alt="На картинке Karoline Bush">-->
+<!--                                <p class="teachers__name">Karoline Bush</p>-->
+<!--                                <p class="teachers__country">Канада</p>-->
+<!--                            </div>-->
+<!--                        </li>-->
 
-                        <li class="slider__item slider__item--hide">
-                            <div class="teachers__item">
-                                <img src="img/src/teacher-1@1x.jpg" alt="На картинке Kate Smith">
-                                <p class="teachers__name">Kate Smith</p>
-                                <p class="teachers__country">США</p>
-                            </div>
-                        </li>
-                        <li class="slider__item slider__item--hide">
-                            <div class="teachers__item">
-                                <img src="img/src/teacher-2@1x.jpg" alt="На картинке Samuel King">
-                                <p class="teachers__name">Samuel King</p>
-                                <p class="teachers__country">США</p>
-                            </div>
-                        </li>
-                        <li class="slider__item slider__item--hide">
-                            <div class="teachers__item">
-                                <img src="img/src/teacher-3@1x.jpg" alt="На картинке Nikole Young">
-                                <p class="teachers__name">Nikole Young</p>
-                                <p class="teachers__country">Канада</p>
-                            </div>
-                        </li>
-                        <li class="slider__item slider__item--hide">
-                            <div class="teachers__item">
-                                <img src="img/src/teacher-4@1x.jpg" alt="На картинке Karoline Bush">
-                                <p class="teachers__name">Karoline Bush</p>
-                                <p class="teachers__country">Канада</p>
-                            </div>
-                        </li>
+<!--                        <li class="slider__item slider__item&#45;&#45;hide">-->
+<!--                            <div class="teachers__item">-->
+<!--                                <img src="img/src/teacher-1@1x.jpg" alt="На картинке Kate Smith">-->
+<!--                                <p class="teachers__name">Kate Smith</p>-->
+<!--                                <p class="teachers__country">США</p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li class="slider__item slider__item&#45;&#45;hide">-->
+<!--                            <div class="teachers__item">-->
+<!--                                <img src="img/src/teacher-2@1x.jpg" alt="На картинке Samuel King">-->
+<!--                                <p class="teachers__name">Samuel King</p>-->
+<!--                                <p class="teachers__country">США</p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li class="slider__item slider__item&#45;&#45;hide">-->
+<!--                            <div class="teachers__item">-->
+<!--                                <img src="img/src/teacher-3@1x.jpg" alt="На картинке Nikole Young">-->
+<!--                                <p class="teachers__name">Nikole Young</p>-->
+<!--                                <p class="teachers__country">Канада</p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li class="slider__item slider__item&#45;&#45;hide">-->
+<!--                            <div class="teachers__item">-->
+<!--                                <img src="img/src/teacher-4@1x.jpg" alt="На картинке Karoline Bush">-->
+<!--                                <p class="teachers__name">Karoline Bush</p>-->
+<!--                                <p class="teachers__country">Канада</p>-->
+<!--                            </div>-->
+<!--                        </li>-->
 
-                    </ul>
-                </div>
+<!--                    </ul>-->
+<!--                </div>-->
 
-                <a class="teachers__prev slider__prev">
-                    <svg width="15" height="8">
-                        <use xlink:href="#icon-arrow-left"></use>
-                    </svg>
-                </a>
-                <a class="teachers__next slider__next">
-                    <svg width="15" height="8">
-                        <use xlink:href="#icon-arrow-right"></use>
-                    </svg>
-                </a>
+<!--                <a class="teachers__prev slider__prev">-->
+<!--                    <svg width="15" height="8">-->
+<!--                        <use xlink:href="#icon-arrow-left"></use>-->
+<!--                    </svg>-->
+<!--                </a>-->
+<!--                <a class="teachers__next slider__next">-->
+<!--                    <svg width="15" height="8">-->
+<!--                        <use xlink:href="#icon-arrow-right"></use>-->
+<!--                    </svg>-->
+<!--                </a>-->
 
-            </section>
+<!--            </section>-->
 
 
 
-            <section class="write">
-                <div class="write__body container">
-                    <h2 class="write__call">Запишитесь<br>на бесплатное пробное занятие</h2>
-                    <p class="write__subcall">Приходите к нам в гости и мы познакомим вас с педагогами, расскажем о школе и ответим на все ваши вопросы</p>
-                    <div class="write__but write__but--yellow">
-                        <a class="button write__button" href="https://echo.htmlacademy.ru">Записаться</a>
-                    </div>
-                </div>
-            </section>
+<!--            <section class="write">-->
+<!--                <div class="write__body container">-->
+<!--                    <h2 class="write__call">Запишитесь<br>на бесплатное пробное занятие</h2>-->
+<!--                    <p class="write__subcall">Приходите к нам в гости и мы познакомим вас с педагогами, расскажем о школе и ответим на все ваши вопросы</p>-->
+<!--                    <div class="write__but write__but&#45;&#45;yellow">-->
+<!--                        <a class="button write__button" href="https://echo.htmlacademy.ru">Записаться</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </section>-->
 
-            <section class="contacts">
-                <div class="contacts__text-wrapper">
-                    <h2 class="contacts__header">Мы ждем вас</h2>
-                    <div class="contacts__contacts-wrapper">
-                        <div class="contacts__item">
-                            <p class="contacts__subtitle">Приходите к нам:</p>
-                            <p class="contacts__text">Санкт-Петербург,<br> ул. Большая Конюшенная, 19</p>
-                        </div>
-                        <div class="contacts__item">
-                            <p class="contacts__subtitle">Режим работы:</p>
-                            <p class="contacts__text">Пн-Сб, с 9-00 до 20-00</p>
-                        </div>
-                        <div class="contacts__item">
-                            <p class="contacts__subtitle">Позвоните нам:</p>
-                            <p class="contacts__text"><a href="tel:+74959834719">+ 7 (495) 983-47-19</a></p>
-                        </div>
-                        <div class="contacts__item contacts__item--mail">
-                            <p class="contacts__subtitle">Напишите нам:</p>
-                            <p class="contacts__text"><a href="mailto:info@cleverbaby.ru">info@cleverbaby.ru</a></p>
-                        </div>
-                    </div>
-                    <div class="contacts__item contacts__item--social">
-                        <p class="contacts__subtitle">Мы в соцсетях:</p>
-                        <ul class="contacts__social">
-                            <li class="contacts__social-item"><a href="#" aria-label="Мы в Facebook"></a>
-                                <svg class="contacts__social-facebook" height="12" width="16">
-                                    <use xlink:href="img/src/sprite.svg/#fb"></use>
-                                </svg>
-                            </li>
-                            <li class="contacts__social-item"><a href="#" aria-label="Мы в VKontakte"></a>
-                                <svg class="contacts__social-vk" height="8" width="14">
-                                    <use xlink:href="img/src/sprite.svg/#vk"></use>
-                                </svg>
-                            </li>
-                            <li class="contacts__social-item"><a href="#" aria-label="Мы в Instagram"></a>
-                                <svg class="contacts__social-instagram" height="12" width="12">
-                                    <use xlink:href="img/src/sprite.svg/#instagram"></use>
-                                </svg>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+<!--            <section class="contacts">-->
+<!--                <div class="contacts__text-wrapper">-->
+<!--                    <h2 class="contacts__header">Мы ждем вас</h2>-->
+<!--                    <div class="contacts__contacts-wrapper">-->
+<!--                        <div class="contacts__item">-->
+<!--                            <p class="contacts__subtitle">Приходите к нам:</p>-->
+<!--                            <p class="contacts__text">Санкт-Петербург,<br> ул. Большая Конюшенная, 19</p>-->
+<!--                        </div>-->
+<!--                        <div class="contacts__item">-->
+<!--                            <p class="contacts__subtitle">Режим работы:</p>-->
+<!--                            <p class="contacts__text">Пн-Сб, с 9-00 до 20-00</p>-->
+<!--                        </div>-->
+<!--                        <div class="contacts__item">-->
+<!--                            <p class="contacts__subtitle">Позвоните нам:</p>-->
+<!--                            <p class="contacts__text"><a href="tel:+74959834719">+ 7 (495) 983-47-19</a></p>-->
+<!--                        </div>-->
+<!--                        <div class="contacts__item contacts__item&#45;&#45;mail">-->
+<!--                            <p class="contacts__subtitle">Напишите нам:</p>-->
+<!--                            <p class="contacts__text"><a href="mailto:info@cleverbaby.ru">info@cleverbaby.ru</a></p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="contacts__item contacts__item&#45;&#45;social">-->
+<!--                        <p class="contacts__subtitle">Мы в соцсетях:</p>-->
+<!--                        <ul class="contacts__social">-->
+<!--                            <li class="contacts__social-item"><a href="#" aria-label="Мы в Facebook"></a>-->
+<!--                                <svg class="contacts__social-facebook" height="12" width="16">-->
+<!--                                    <use xlink:href="img/src/sprite.svg/#fb"></use>-->
+<!--                                </svg>-->
+<!--                            </li>-->
+<!--                            <li class="contacts__social-item"><a href="#" aria-label="Мы в VKontakte"></a>-->
+<!--                                <svg class="contacts__social-vk" height="8" width="14">-->
+<!--                                    <use xlink:href="img/src/sprite.svg/#vk"></use>-->
+<!--                                </svg>-->
+<!--                            </li>-->
+<!--                            <li class="contacts__social-item"><a href="#" aria-label="Мы в Instagram"></a>-->
+<!--                                <svg class="contacts__social-instagram" height="12" width="12">-->
+<!--                                    <use xlink:href="img/src/sprite.svg/#instagram"></use>-->
+<!--                                </svg>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
 
-                <div class="contacts__map-wrapper" aria-label="Карта с адресом">
-                    <section class="map">
-                        <h2 class="visually-hidden">Карта с нашим местоположением</h2>
-                        <div class="container">
-                            <div id="map" class="map__wrapper">
-                                <img src="img/src/map-layer-desktop@1x.jpg" alt="Карта с нашим местонахождением" width="1366" height="611">
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </section>
+<!--                <div class="contacts__map-wrapper" aria-label="Карта с адресом">-->
+<!--                    <section class="map">-->
+<!--                        <h2 class="visually-hidden">Карта с нашим местоположением</h2>-->
+<!--                        <div class="container">-->
+<!--                            <div id="map" class="map__wrapper">-->
+<!--                                <img src="img/src/map-layer-desktop@1x.jpg" alt="Карта с нашим местонахождением" width="1366" height="611">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </section>-->
+<!--                </div>-->
+<!--            </section>-->
 
-            <footer>
-                <section class="footer">
-                    <h2 class="visually-hidden">Права и политика конфиденциальности</h2>
-                    <p><a href="#">CleverBaby 2020 Все права защищены</a></p>
-                    <p><a href="#">Политика конфиденциальности</a></p>
-                </section>
-            </footer>
+<!--            <footer>-->
+<!--                <section class="footer">-->
+<!--                    <h2 class="visually-hidden">Права и политика конфиденциальности</h2>-->
+<!--                    <p><a href="#">CleverBaby 2020 Все права защищены</a></p>-->
+<!--                    <p><a href="#">Политика конфиденциальности</a></p>-->
+<!--                </section>-->
+<!--            </footer>-->
 
-        </main>
+<!--        </main>-->
 
 
     </div>

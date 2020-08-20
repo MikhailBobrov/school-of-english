@@ -1,0 +1,37 @@
+.phone {
+  margin-left: 0;
+  margin-top: 35px;
+  padding-left: 0;
+  padding-bottom: 40px;
+  list-style: none;
+  font-size: 18px;
+  display: none;
+}
+
+.phone__menu {
+  position: absolute;
+  top: 328px;
+  right: 0;
+  left: 16px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .phone {
+
+  }
+}
+
+.phone__open {
+  display: grid;
+}
+
+.phone__list-link {
+  color: var(--special-extra-dark);
+}
+
+//.phone__svg {
+//  display: block;
+//}
+
+

@@ -1,0 +1,45 @@
+
+///List
+.site-list {
+  margin: 0;
+  padding-left: 0;
+  padding-top: 35px;
+  list-style: none;
+  font-size: 18px;
+  color: var(--special-extra-dark);
+  display: none;
+  row-gap: 25px;
+}
+
+.site-list--open {
+  display: grid;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+
+  }
+}
+
+
+//Link
+.site-list__link {
+  color: var(--special-extra-dark);
+}
+
+.site-list__link--current {
+  font-weight: bold;
+  color: var(--special-extra-dark);
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 22px;
+  }
+}
+
+
+
