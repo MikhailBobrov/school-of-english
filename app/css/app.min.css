@@ -236,6 +236,10 @@ input[type=radio].visually-hidden {
   padding-left: 15px;
   padding-top: 33px
 }
+.header__wrap {
+  display: -ms-grid;
+  display: grid
+}
 .header__logo {
   margin-left: 40px
 }
@@ -326,6 +330,11 @@ input[type=radio].visually-hidden {
   right: 0;
   left: 15px
 }
+@media (min-width:768px) {
+  .main-nav {
+    background-color: #3b84bb
+  }
+}
 .site-list {
   margin: 0;
   padding-left: 0;
@@ -369,6 +378,16 @@ input[type=radio].visually-hidden {
   top: 328px;
   right: 0;
   left: 16px
+}
+@media (min-width:768px) {
+  .phone__menu {
+    display: -ms-grid;
+    display: grid;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 550px
+  }
 }
 .phone__open {
   display: -ms-grid;

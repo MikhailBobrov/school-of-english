@@ -14,3 +14,9 @@
   right: 0;
   left: 15px;
 }
+
+@media (min-width: 768px) {
+  .main-nav {
+    background-color: #3b84bb;
+  }
+}

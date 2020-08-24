@@ -17,8 +17,12 @@
 
 
 @media (min-width: $tablet-width) {
-  .phone {
-
+  .phone__menu {
+    display: grid;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 550px;
   }
 }
 
