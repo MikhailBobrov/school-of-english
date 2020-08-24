@@ -10,7 +10,12 @@ menuButton.addEventListener('click', function () {
     this.setAttribute('aria-expanded', !expanded)
     menuList.classList.toggle('site-list--open')
     phoneList.classList.toggle('phone__open')
+    phoneList.classList.toggle('phone__close')
+
+
 })
+
+
 
 
 
