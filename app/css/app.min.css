@@ -236,6 +236,14 @@ input[type=radio].visually-hidden {
   padding-left: 15px;
   padding-top: 33px
 }
+@media (min-width:768px) {
+  .header {
+    -ms-grid-columns: -webkit-min-content -webkit-min-content -webkit-min-content;
+    -ms-grid-columns: min-content min-content min-content;
+    grid-template-columns: -webkit-min-content -webkit-min-content -webkit-min-content;
+    grid-template-columns: min-content min-content min-content
+  }
+}
 .header__logo {
   margin-left: 40px
 }
@@ -339,6 +347,11 @@ input[type=radio].visually-hidden {
 .site-list--open {
   display: -ms-grid;
   display: grid
+}
+@media (min-width:1300px) {
+  .site-list {
+    grid-auto-flow: column
+  }
 }
 .site-list__link {
   color: var(--special-extra-dark)

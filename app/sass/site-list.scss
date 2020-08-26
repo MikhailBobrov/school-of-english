@@ -7,7 +7,6 @@
   list-style: none;
   font-size: 18px;
   color: var(--special-extra-dark);
-  display: none;
   row-gap: 25px;
 }
 
@@ -19,6 +18,13 @@
   .site-list {
 
   }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    grid-auto-flow: column;
+  }
+
 }
 
 

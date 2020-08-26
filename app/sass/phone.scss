@@ -17,6 +17,10 @@
 
 
 @media (min-width: $tablet-width) {
+  .phone {
+    //display: grid;
+  }
+
   .phone__close {
     display: grid;
     position: absolute;
