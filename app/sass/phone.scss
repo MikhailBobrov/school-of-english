@@ -1,45 +1,69 @@
 .phone {
-  margin-left: 0;
-  margin-top: 35px;
-  padding-left: 0;
-  padding-bottom: 40px;
-  list-style: none;
-  font-size: 18px;
   display: none;
+  padding-top: 12px;
+  padding-left: 6px;
 }
 
-.phone__menu {
-  position: absolute;
-  top: 328px;
-  right: 0;
-  left: 16px;
+.phone__open {
+  display: inline-block;
+  padding-left: 13px;
+}
+
+.phone__svg {
+  margin-left: -5px;
+  margin-top: 8px;
+  fill: #122659;
+
+  &:hover,
+  &:focus {
+    fill: #3b84bb;
+  }
+}
+
+.phone__list-link {
+  padding-left: 5px;
+  color: var(--special-extra-dark);
+
+  &:hover,
+  &:focus {
+    color: #3b84bb;
+  }
 }
 
 
 @media (min-width: $tablet-width) {
-  .phone {
-    //display: grid;
-  }
-
   .phone__close {
-    display: grid;
+    display: flex;
     position: absolute;
-    top: 0;
+    top: 13px;
     right: 0;
-    left: 550px;
+    left: 527px;
+  }
+
+  .phone__open {
+    padding-left: 6px;
+  }
+
+  .phone__list-link {
+    padding-top: 3px;
+    padding-left: 12px;
   }
 }
 
-.phone__open {
-  display: grid;
+@media (min-width: $desktop-width) {
+  .phone {
+    min-width: 201px;
+    padding-left: 17px;
+    padding-top: 7px;
+  }
+
+  .phone__list-link {
+    padding-top: 0;
+    padding-left: 5px;
+  }
+
 }
 
-.phone__list-link {
-  color: var(--special-extra-dark);
-}
 
-//.phone__svg {
-//  display: block;
-//}
 
 

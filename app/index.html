@@ -12,48 +12,44 @@
     <body>
 
     <div class="index">
-        <header class="header container">
+        <header class="header header__container">
 
-                <div class="header__logo header__out">
-                    <a class="header__logo-link" href="index.html" aria-label="Иконка логотипа магазина">
-                        <svg class="header__logo-svg" width="132" height="21">
-                            <use xlink:href="img/src/sprite.svg#cleverBaby"></use>
-                        </svg>
-                    </a>
-                </div>
+            <div class="header__logo">
+                <a class="header__logo-link" href="index.html" aria-label="Иконка логотипа магазина">
+                    <picture>
+                        <source media="(min-width: 1300px)" srcset="img/src/CleverBaby-desktop.svg">
+                        <source media="(min-width: 768px)" srcset="img/src/CleverBaby-tablet.svg">
+                        <img class="header__logo-image" src="img/src/logo.svg" alt="Иконка логотипа магазинаи">
+                    </picture>
+                </a>
+            </div>
 
-                <nav class="main-nav main-nav__menu">
+            <nav class="main-nav main-nav__menu">
 
-                    <button class="nav-icon3 open" type="button" aria-expanded="false" aria-controls="site__list phone">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
+                <button class="nav-icon3 open" type="button" aria-expanded="false" aria-controls="site__list phone">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
 
-                    <ul class="main-nav__list site-list site-list--open" id="site-list">
-                        <li class="site-list__item"><a class="site-list__link site-list__link--current" href="#">Методика</a></li>
-                        <li class="site-list__item"><a class="site-list__link" href="#">Преподователи</a></li>
-                        <li class="site-list__item"><a class="site-list__link" href="#">Группы</a></li>
-                        <li class="site-list__item"><a class="site-list__link" href="#">Отзывы</a></li>
-                        <li class="site-list__item"><a class="site-list__link" href="#">Контакты</a></li>
-                    </ul>
+                <ul class="main-nav__list site-list site-list--open" id="site-list">
+                    <li class="site-list__item"><a class="site-list__link site-list__link--current" href="#">Методика</a></li>
+                    <li class="site-list__item"><a class="site-list__link" href="#">Преподаватели</a></li>
+                    <li class="site-list__item"><a class="site-list__link" href="#">Группы</a></li>
+                    <li class="site-list__item"><a class="site-list__link" href="#">Отзывы</a></li>
+                    <li class="site-list__item"><a class="site-list__link" href="#">Контакты</a></li>
+                </ul>
 
-                </nav>
-
-
-            <ul class="phone phone__menu phone__open" id="phone">
-                <li class="phone__list">
-                    <a class="phone__list-link" href="tel:+ 7 (495) 983-47-19">
-                        <span class="phone__contact-icon" aria-label="Иконка телефона">
-                            <svg class="phone__svg" width="15" height="15">
-                                <use xlink:href="img/src/sprite.svg#icon-phone"></use>
-                            </svg>
-                        </span>
-                        + 7 (495) 983-47-19</a>
-                </li>
-            </ul>
-
+                <a class="phone phone__open" id="phone" href="tel:+ 7 (495) 983-47-19">
+                    <svg class="phone__svg" width="15" height="15">
+                        <use xlink:href="img/src/sprite.svg#icon-phone"></use>
+                    </svg>
+                    <span class="phone__list-link" aria-label="Иконка телефона">
+                         + 7 (495) 983-47-19
+                    </span>
+                </a>
+            </nav>
         </header>
 
 <!--        <main class="main-page">-->

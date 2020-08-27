@@ -1,22 +1,55 @@
 .header {
-  display: grid;
   padding-left: 15px;
-  padding-top: 33px;
+  padding-top: 28px;
+  width: 100%;
+  position: relative;
+}
+
+.header__container {
+  //width: 320px;
+  margin: 0 auto;
+}
+
+
+.header__logo {
+  padding-left: 41px;
+}
+
+.header__logo-link {
+  display: inline-block;
 }
 
 @media (min-width: 768px) {
   .header {
-    grid-template-columns: min-content min-content min-content;
+    padding-left: 44px;
+  }
+
+  .header__container {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header__logo {
+    padding-left: 49px;
   }
 }
 
-.header__logo {
-  margin-left: 40px;
-}
+@media (min-width: $desktop-width) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 
-//Logo - чтобы мжно выделить и навести на Лого
-.header__out {
-  z-index: 1;
+  .header__container {
+    width: 1366px;
+  }
+
+  .header__logo {
+    padding-left: 54px;
+    padding-top: 12px;
+  }
 }
 
 

@@ -1,22 +1,18 @@
-//Menu - сначала пришем стили ктр использую на всех
-// разрешениях,а потом специфические
-
-//фишка - мы все наше меню наивгации сделали абсолютным
-//menu
 .main-nav {
-  display: grid;
-  padding-top: 23px;
+  display: flex;
+  flex-direction: column;
+  //margin: 0 auto;
 }
 
 .main-nav__menu {
-  //position: absolute;
-  //top: 0;
-  //right: 0;
-  //left: 15px;
+
 }
 
-@media (min-width: 768px) {
+@media (min-width: $desktop-width) {
   .main-nav {
-
+    width: 1022px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
